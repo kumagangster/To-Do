@@ -1,0 +1,31 @@
+<!-- <%@ page import="models.Task" %>
+<%@ page import="java.util.*" %> -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>TODO LIST</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body class="page">
+    <h1>My Tasks</h1>
+    <form id="task" method="POST" action="Add" >
+        <div class="flex-containers">
+            <div>
+                <input type="text" id="tname" name="tname" placeholder="Task Name" required>
+                <br>
+                <small id="valtask">Task Name should not be invalid or contain special characters</small>
+            </div>
+            <div>
+                <input type="date" id="due" name="due" required>
+                <br>
+                <small id="valdue">Due Date should not be empty or before today</small>
+            </div>
+            <button type="submit" id="button">+Add</button>
+        </div>
+    </form>
+    <a href="Res.jsp">View To-Do List</a>
+    <script type="text/javascript" src="Validation.js"></script>
+</body>
+</html>
